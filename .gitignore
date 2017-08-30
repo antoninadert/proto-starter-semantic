@@ -1,1 +1,4 @@
 node_modules/
+.vscode
+client/lib/semantic-ui/*
+!client/lib/semantic-ui/custom.semantic.json

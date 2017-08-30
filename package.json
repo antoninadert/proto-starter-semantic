@@ -25,6 +25,14 @@
     "viewmodel-react-explorer": "^1.0.14",
     "viewmodel-react-plugin": "^3.0.0"
   },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {"browsers": ["last 2 versions"]}
+    }
+  },
   "babel": {
     "presets": [
       "es2015",
