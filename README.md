@@ -1,5 +1,5 @@
-# proto-starter
-An isomorphic (universal) web app starter project. This project is designed with developer productivity and happiness in mind.
+# proto-starter-semantic
+An isomorphic (universal) web app starter project with [Semantic UI](https://semantic-ui.com/) integration. This project is designed with developer productivity and happiness in mind.
 This is because it uses Viewmodel for declarative components and state management. Viewmodel is easy-to-use and powerful, and fallback on React if needed.
 This starter has SSR, isomorphic routing built-in, and will render the initial component states directly.
 It is also highly extendable using Meteor's capabilities
@@ -15,6 +15,7 @@ Technology used
 4. [Universal router](https://github.com/kriasoft/universal-router) and [History](https://github.com/browserstate/history.js/) to provide an easy-to-use, isomorphic router.
 5. Test suite for Viewmodel and React: enzyme, jest... See [Viewmodel](https://viewmodel.org/) documentation for testing
 6. [Debugging tool for Viewmodel](https://medium.com/@manueldeleon_94284/viewmodel-explorer-a-debugging-tool-3833403c3821): viewmodel-react-explorer component is included in the < App / > component, and let you play with the states of components
+7. [Semantic UI](https://semantic-ui.com/) For an easy-to-use component and styling
 
 Installation
 -------------
@@ -47,6 +48,12 @@ Useful for putting collections, routes...
 
 `/client` 
 This folder contains client (browser) code, Used for routing and initializing the project (browser-side).
+
+`/client/lib` 
+This folder will be loaded first in the client (meteor convention) 
+
+`/client/lib/semantic-ui` 
+Contains semantic-ui stuff. It should generate .custom.semantic.ui automatically, as well as some files and folders related to semantic-ui.When running `meteor` command, if semantic UI is not generating correctly, use Ctrl+C to stop generation, delete `.custom.semantic.ui` but keep `custom.semantic.ui` and try to run `meteor` again 
 
 `/server` 
 This folder contains server code, Used for your [meteor methods](https://guide.meteor.com/methods.html) (pub/sub mechanism)
